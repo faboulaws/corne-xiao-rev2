@@ -1,6 +1,0 @@
--   id: trailing-whitespace
-    name: Copy keymap
-    description: Copy keymap
-    entry: copy-keymap.sh
-    language: bash
-    types: [text]

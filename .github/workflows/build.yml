@@ -1,5 +1,13 @@
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run post-commit script
+        run: |
+          ./copy-and-commit-keymap.sh  # run
+          git push           # push
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
