@@ -11,7 +11,7 @@ if git diff --cached --name-only | grep -q "config/boards/shields/corny/corny.ke
   # Use the SHA to access the message elsewhere in your script (if needed)
   last_commit_message=$(git log --format=%B -n 1 $latest_commit_sha)
   
-  git commit -m "$last_commit_message Updated config/boards/shields/corny/corny.keymap from config/corny.keymap changes."
+  git commit -m "$last_commit_message: Updated config/boards/shields/corny/corny.keymap from config/corny.keymap changes."
   echo "Committed changes to config/boards/shields/corny/corny.keymap"
   git push
 else
