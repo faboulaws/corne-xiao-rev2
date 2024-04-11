@@ -31,10 +31,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                         &kp N6    &kp N7    &kp N8        &kp N9     &kp N0           &kp BSPC
-&none      &none   &none   &none     &none   &none                          &kp LEFT  &kp DOWN  &kp UP        &kp RIGHT  &trans           &kp F12
-&kp LSHFT  &none   &none   &none     &none   &none      &bootloader  &none  &kp F6    &kp LEFT  &kp UP_ARROW  &kp DOWN   &kp RIGHT_ARROW  &kp F11
-                           &kp LGUI  &trans  &kp SPACE                      &kp RET   &trans    &kp LALT
+&kp GRAVE  &kp N1  &kp N2  &kp N3    &kp N4  &kp N5                         &kp N6    &kp N7     &kp N8        &kp N9            &kp N0             &kp BSPC
+&none      &none   &none   &none     &none   &none                          &kp LEFT  &kp MINUS  &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+&kp LSHFT  &none   &none   &none     &none   &none      &bootloader  &none  &kp F6    &kp LEFT   &kp UP_ARROW  &kp DOWN          &kp RIGHT_ARROW    &kp F11
+                           &kp LGUI  &trans  &kp SPACE                      &kp RET   &trans     &kp LALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -48,10 +48,10 @@
             //                    | GUI |     | SPC |                    | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                           &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans                              &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans     &none  &kp K_PLAY_PAUSE  &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LGUI  &trans    &kp SPACE                           &kp RET    &trans     &kp LALT
+&kp TILDE   &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT                           &kp CARET  &kp AMPS        &kp KP_MULTIPLY  &kp LPAR        &kp RPAR         &kp BSPC
+&kp DELETE  &kp F1    &kp F2  &kp F3    &kp F4    &kp F5                              &kp F11    &kp UNDERSCORE  &kp PLUS         &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE
+&kp LSHFT   &kp F6    &kp F7  &kp F8    &kp F9    &kp F10    &none  &kp K_PLAY_PAUSE  &kp F12    &kp HOME        &kp END          &kp PAGE_UP     &kp PAGE_DOWN    &kp TILDE
+                              &kp LGUI  &trans    &kp SPACE                           &kp RET    &trans          &kp LALT
             >;
 
             sensor-bindings =
