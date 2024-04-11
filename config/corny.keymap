@@ -61,9 +61,9 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans           &trans                      &trans            &trans             &kp UP_ARROW        &trans     &trans  &trans
-&trans          &trans        &trans        &trans        &trans           &trans                      &trans            &kp LEFT_ARROW     &kp DOWN            &kp RIGHT  &trans  &trans
-&trans          &trans        &trans        &trans        &trans           &trans      &trans  &trans  &trans            &trans             &trans              &trans     &trans  &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans           &trans                      &trans            &trans             &kp UP_ARROW        &trans     &trans      &trans
+&trans          &trans        &trans        &trans        &trans           &trans                      &trans            &kp LEFT_ARROW     &kp DOWN            &kp RIGHT  &caps_word  &trans
+&trans          &trans        &trans        &trans        &trans           &trans      &trans  &trans  &trans            &trans             &trans              &trans     &trans      &trans
                                             &kp C_REWIND  &kp K_VOLUME_UP  &kp C_MUTE                  &kp K_PLAY_PAUSE  &kp K_VOLUME_DOWN  &kp C_FAST_FORWARD
             >;
         };
