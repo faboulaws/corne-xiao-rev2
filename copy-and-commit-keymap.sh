@@ -11,6 +11,7 @@ if git diff --cached --name-only | grep -q "config/boards/shields/corny/corny.ke
   last_commit_message=$(git log -1 --pretty=%B | sed 1d)
   git commit -m "$last_commit_message Updated config/boards/shields/corny/corny.keymap from config/corny"
   echo "Committed changes to config/boards/shields/corny/corny.keymap"
+  git push
 else
   echo "No changes detected in config/boards/shields/corny/corny.keymap. Skipping commit."
 fi
