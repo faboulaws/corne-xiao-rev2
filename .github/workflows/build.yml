@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.CORNE_TOKEN }}
+          token: ${{ secrets.CORNE_TOKEN }}
       - name: Run post-commit script
         run: |
           git config user.name github-actions
