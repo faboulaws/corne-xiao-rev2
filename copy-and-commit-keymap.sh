@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copy content from copy to original
-cp config/corny config/boards/shields/corny/corny.keymap
+cp config/corny.keymap config/boards/shields/corny/corny.keymap
 
 # Check if original file has been modified (staged or unstaged)
 if git diff --cached --name-only | grep -q "config/boards/shields/corny/corny.keymap" || git diff --name-only | grep -q "config/boards/shields/corny/corny.keymap"; then
