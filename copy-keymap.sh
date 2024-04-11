@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Check if copy file has been modified
-if git diff --cached --name-only | grep -q "copy.txt"; then
+if git diff --cached --name-only | grep -q "config/corny.keymap"; then
   # Copy content from copy to original
-  cp copy.txt original.txt
+  cp config/corny.keymap config/boards/shields/corny/corny.keymap
   # Add original file to staging area
-  git add original.txt
-  echo "Updated original.txt from copy.txt changes."
+  git add config/boards/shields/corny/corny.keymap
+  echo "Updated config/boards/shields/corny/corny.keymap from config/corny.keymap changes."
 fi
