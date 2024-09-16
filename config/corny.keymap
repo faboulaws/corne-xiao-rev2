@@ -30,7 +30,7 @@
 
             bindings = <
 &kp ESCAPE  &kp Q               &kp W           &kp F              &kp P           &kp B                                             &kp J                  &kp L       &kp U                &kp Y            &kp SEMICOLON        &kp BSPC
-&kp TAB     &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_GUI S     &lt 1 F         &lt 3 G                                           &lt 3 M                &lt 2 N     &mt LEFT_GUI E       &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp SQT
+&kp TAB     &mt LEFT_CONTROL A  &mt LEFT_ALT R  &mt LEFT_GUI S     &lt 1 T         &lt 3 G                                           &lt 3 M                &lt 2 N     &mt LEFT_GUI E       &mt RIGHT_ALT I  &mt RIGHT_CONTROL O  &kp SQT
 &kp LSHFT   &kp Z               &kp X           &kp C              &kp D           &kp V                 &kp C_PLAY_PAUSE  &kp C_PP  &kp K                  &kp H       &kp COMMA            &kp DOT          &kp FSLH             &kp ENTER
                                                 &mt LEFT_GUI LEFT  &lt 1 UP_ARROW  &mt LEFT_SHIFT ENTER                              &mt RIGHT_SHIFT SPACE  &lt 2 DOWN  &mt RIGHT_ALT RIGHT
             >;
