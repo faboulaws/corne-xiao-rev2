@@ -1,4 +1,6 @@
 #include "corny.dtsi"
+#include <dt-bindings/zmk/mouse.h>
+
 
 &kscan0 {
     col-gpios
