@@ -1,44 +1,43 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
-         behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            quick-tap-ms = <0>;
-            flavor = "balanced";
-            bindings = <&kp>, <&kp>;
-        };
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        combo_left {
-            bindings = <&kp LEFT_ARROW>;
-            key-positions = <39 36>;
+        behaviors {
+            hm: homerow_mods {
+                compatible = "zmk,behavior-hold-tap";
+                #binding-cells = <2>;
+                tapping-term-ms = <150>;
+                quick-tap-ms = <0>;
+                flavor = "balanced";
+                bindings = <&kp>, <&kp>;
+            };
         };
 
-        combo_right {
-            bindings = <&kp RIGHT>;
-            key-positions = <41 38>;
-        };
+        combos {
+            compatible = "zmk,combos";
 
-        combo_down {
-            bindings = <&kp DOWN>;
-            key-positions = <40 38>;
-        };
+            combo_left {
+                bindings = <&kp LEFT_ARROW>;
+                key-positions = <38 41>;
+            };
 
-        combo_up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <39 37>;
+            combo_right {
+                bindings = <&kp RIGHT>;
+                key-positions = <40 43>;
+            };
+
+            combo_down {
+                bindings = <&kp DOWN>;
+                key-positions = <40 42>;
+            };
+
+            combo_up {
+                bindings = <&kp UP_ARROW>;
+                key-positions = <41 39>;
+            };
         };
-    };
     };
 
     keymap {
