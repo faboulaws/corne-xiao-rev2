@@ -1,7 +1,8 @@
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     behaviors {
@@ -101,8 +102,8 @@
 
         layer_3 {
             bindings = <
-&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans           &trans                      &trans            &mkp LCLK          &kp UP_ARROW        &mkp RCLK  &trans  &trans
-&trans          &trans        &trans        &trans        &trans           &trans                      &trans            &kp LEFT_ARROW     &kp DOWN            &kp RIGHT  &kp T   &trans
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans           &trans                      &trans            &mkp LCLK          &trans              &mkp RCLK  &trans  &trans
+&trans          &trans        &trans        &trans        &trans           &trans                      &trans            &trans             &trans              &trans     &trans  &trans
 &trans          &trans        &trans        &trans        &trans           &trans      &trans  &trans  &trans            &mkp MB4           &mkp MB3            &mkp MB5   &trans  &trans
                                             &kp C_REWIND  &kp K_VOLUME_UP  &kp C_MUTE                  &kp K_PLAY_PAUSE  &kp K_VOLUME_DOWN  &kp C_FAST_FORWARD
             >;
