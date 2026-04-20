@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: corny_left rgbled_adapter
-  - board: xiao_ble
+  - board: xiao_ble//zmk
     shield: corny_right rgbled_adapter
